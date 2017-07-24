@@ -6,6 +6,8 @@
 	<dict>
 		<key>TestAlgorithms.xcscheme</key>
 		<dict>
+			<key>isShown</key>
+			<true/>
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
@@ -18,6 +20,16 @@
 			<true/>
 		</dict>
 		<key>7835F3D01F24D05F00A92593</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>7835F3E01F24D3C800A92593</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>78EF7A841F24E9A8003F3BC7</key>
 		<dict>
 			<key>primary</key>
 			<true/>

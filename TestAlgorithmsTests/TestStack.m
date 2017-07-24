@@ -1,5 +1,5 @@
 //
-//  TestAlgorithmsTests.m
+//  TestStack.m
 //  TestAlgorithmsTests
 //
 //  Created by Dima Gubatenko on 23.07.17.
@@ -7,9 +7,9 @@
 //
 
 #import <XCTest/XCTest.h>
+#import "Stack.h"
 
 @interface TestAlgorithmsTests : XCTestCase
-
 @end
 
 @implementation TestAlgorithmsTests
@@ -27,12 +27,27 @@
 - (void)testExample {
     // This is an example of a functional test case.
     // Use XCTAssert and related functions to verify your tests produce the correct results.
+    XCTAssertTrue(true);
 }
 
-- (void)testPerformanceExample {
-    // This is an example of a performance test case.
+- (void)testStackPushPerfomance {
+    Stack<NSString *> *const stack = [[Stack alloc] init];
     [self measureBlock:^{
-        // Put the code you want to measure the time of here.
+        for (int i = 0; i < 1000000; i++) {
+            [stack pushValue:@"test string"];
+        }
+    }];
+}
+
+- (void)testStackPopPerfomance {
+    Stack<NSString *> *const stack = [[Stack alloc] init];
+    for (int i = 0; i < 1000000; i++) {
+        [stack pushValue:@"test string"];
+    }
+    [self measureBlock:^{
+        for (int i = 0; i < 1000000; i++) {
+            [stack popValue];
+        }
     }];
 }
 

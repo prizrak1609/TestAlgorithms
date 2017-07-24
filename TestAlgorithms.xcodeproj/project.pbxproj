@@ -13,7 +13,8 @@
 		7835F3C61F24D05F00A92593 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7835F3C41F24D05F00A92593 /* Main.storyboard */; };
 		7835F3C81F24D05F00A92593 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7835F3C71F24D05F00A92593 /* Assets.xcassets */; };
 		7835F3CB1F24D05F00A92593 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7835F3C91F24D05F00A92593 /* LaunchScreen.storyboard */; };
-		7835F3D61F24D05F00A92593 /* TestAlgorithmsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7835F3D51F24D05F00A92593 /* TestAlgorithmsTests.m */; };
+		7835F3D61F24D05F00A92593 /* TestStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 7835F3D51F24D05F00A92593 /* TestStack.m */; };
+		78F44DCC1F26059A0045080F /* Stack.m in Sources */ = {isa = PBXBuildFile; fileRef = 78F44DCB1F26059A0045080F /* Stack.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,8 +39,10 @@
 		7835F3CA1F24D05F00A92593 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7835F3CC1F24D05F00A92593 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7835F3D11F24D05F00A92593 /* TestAlgorithmsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestAlgorithmsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		7835F3D51F24D05F00A92593 /* TestAlgorithmsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestAlgorithmsTests.m; sourceTree = "<group>"; };
+		7835F3D51F24D05F00A92593 /* TestStack.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestStack.m; sourceTree = "<group>"; };
 		7835F3D71F24D05F00A92593 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		78F44DCA1F26059A0045080F /* Stack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Stack.h; sourceTree = "<group>"; };
+		78F44DCB1F26059A0045080F /* Stack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Stack.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,14 +84,8 @@
 		7835F3BA1F24D05F00A92593 /* TestAlgorithms */ = {
 			isa = PBXGroup;
 			children = (
-				7835F3BE1F24D05F00A92593 /* AppDelegate.h */,
-				7835F3BF1F24D05F00A92593 /* AppDelegate.m */,
-				7835F3C11F24D05F00A92593 /* ViewController.h */,
-				7835F3C21F24D05F00A92593 /* ViewController.m */,
-				7835F3C41F24D05F00A92593 /* Main.storyboard */,
-				7835F3C71F24D05F00A92593 /* Assets.xcassets */,
-				7835F3C91F24D05F00A92593 /* LaunchScreen.storyboard */,
-				7835F3CC1F24D05F00A92593 /* Info.plist */,
+				78F44DC91F2605820045080F /* Stack */,
+				78F44DC81F2605780045080F /* Other */,
 				7835F3BB1F24D05F00A92593 /* Supporting Files */,
 			);
 			path = TestAlgorithms;
@@ -105,10 +102,34 @@
 		7835F3D41F24D05F00A92593 /* TestAlgorithmsTests */ = {
 			isa = PBXGroup;
 			children = (
-				7835F3D51F24D05F00A92593 /* TestAlgorithmsTests.m */,
+				7835F3D51F24D05F00A92593 /* TestStack.m */,
 				7835F3D71F24D05F00A92593 /* Info.plist */,
 			);
 			path = TestAlgorithmsTests;
+			sourceTree = "<group>";
+		};
+		78F44DC81F2605780045080F /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				7835F3BE1F24D05F00A92593 /* AppDelegate.h */,
+				7835F3BF1F24D05F00A92593 /* AppDelegate.m */,
+				7835F3C11F24D05F00A92593 /* ViewController.h */,
+				7835F3C21F24D05F00A92593 /* ViewController.m */,
+				7835F3C41F24D05F00A92593 /* Main.storyboard */,
+				7835F3C71F24D05F00A92593 /* Assets.xcassets */,
+				7835F3C91F24D05F00A92593 /* LaunchScreen.storyboard */,
+				7835F3CC1F24D05F00A92593 /* Info.plist */,
+			);
+			name = Other;
+			sourceTree = "<group>";
+		};
+		78F44DC91F2605820045080F /* Stack */ = {
+			isa = PBXGroup;
+			children = (
+				78F44DCA1F26059A0045080F /* Stack.h */,
+				78F44DCB1F26059A0045080F /* Stack.m */,
+			);
+			name = Stack;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -160,7 +181,7 @@
 				TargetAttributes = {
 					7835F3B71F24D05F00A92593 = {
 						CreatedOnToolsVersion = 8.3.3;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 					7835F3D01F24D05F00A92593 = {
 						CreatedOnToolsVersion = 8.3.3;
@@ -213,6 +234,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				78F44DCC1F26059A0045080F /* Stack.m in Sources */,
 				7835F3C31F24D05F00A92593 /* ViewController.m in Sources */,
 				7835F3C01F24D05F00A92593 /* AppDelegate.m in Sources */,
 				7835F3BD1F24D05F00A92593 /* main.m in Sources */,
@@ -223,7 +245,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7835F3D61F24D05F00A92593 /* TestAlgorithmsTests.m in Sources */,
+				7835F3D61F24D05F00A92593 /* TestStack.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -351,10 +373,29 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_SECURITY_FLOATLOOPCOUNTER = YES;
+				CLANG_WARN_ASSIGN_ENUM = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_OBJC_EXPLICIT_OWNERSHIP_TYPE = YES;
+				CLANG_WARN_OBJC_IMPLICIT_ATOMIC_PROPERTIES = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_MISSING_PROPERTY_SYNTHESIS = YES;
+				DEVELOPMENT_TEAM = "";
+				GCC_WARN_ABOUT_MISSING_FIELD_INITIALIZERS = YES;
+				GCC_WARN_ABOUT_MISSING_NEWLINE = YES;
+				GCC_WARN_INITIALIZER_NOT_FULLY_BRACKETED = YES;
+				GCC_WARN_SIGN_COMPARE = YES;
 				INFOPLIST_FILE = TestAlgorithms/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = test.algorithms.TestAlgorithms;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				RUN_CLANG_STATIC_ANALYZER = YES;
+				WARNING_CFLAGS = (
+					"-Wall",
+					"-Wfloat-equal",
+					"-Wundef",
+				);
 			};
 			name = Debug;
 		};
@@ -362,10 +403,29 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_SECURITY_FLOATLOOPCOUNTER = YES;
+				CLANG_WARN_ASSIGN_ENUM = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_OBJC_EXPLICIT_OWNERSHIP_TYPE = YES;
+				CLANG_WARN_OBJC_IMPLICIT_ATOMIC_PROPERTIES = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_MISSING_PROPERTY_SYNTHESIS = YES;
+				DEVELOPMENT_TEAM = "";
+				GCC_WARN_ABOUT_MISSING_FIELD_INITIALIZERS = YES;
+				GCC_WARN_ABOUT_MISSING_NEWLINE = YES;
+				GCC_WARN_INITIALIZER_NOT_FULLY_BRACKETED = YES;
+				GCC_WARN_SIGN_COMPARE = YES;
 				INFOPLIST_FILE = TestAlgorithms/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = test.algorithms.TestAlgorithms;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				RUN_CLANG_STATIC_ANALYZER = YES;
+				WARNING_CFLAGS = (
+					"-Wall",
+					"-Wfloat-equal",
+					"-Wundef",
+				);
 			};
 			name = Release;
 		};
@@ -403,7 +463,7 @@
 				7835F3D91F24D05F00A92593 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		7835F3DA1F24D05F00A92593 /* Build configuration list for PBXNativeTarget "TestAlgorithms" */ = {
 			isa = XCConfigurationList;
@@ -412,6 +472,7 @@
 				7835F3DC1F24D05F00A92593 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
 		};
 		7835F3DD1F24D05F00A92593 /* Build configuration list for PBXNativeTarget "TestAlgorithmsTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +481,7 @@
 				7835F3DF1F24D05F00A92593 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
 	};
