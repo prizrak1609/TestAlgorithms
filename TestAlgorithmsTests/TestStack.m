@@ -9,10 +9,10 @@
 #import <XCTest/XCTest.h>
 #import "Stack.h"
 
-@interface TestAlgorithmsTests : XCTestCase
+@interface TestStack : XCTestCase
 @end
 
-@implementation TestAlgorithmsTests
+@implementation TestStack
 
 - (void)setUp {
     [super setUp];

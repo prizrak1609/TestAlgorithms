@@ -40,7 +40,7 @@
     // Process only target precompiled headers (Boolean)
     //"processOnlyTargetPCHs": true,
     // Verbose output (Boolean)
-    //"verbose": false,
+    "verbose": true,
     // Output format ("human" / "json" / "plist" / "xcode")
     //"outputFormat": "human",
 
