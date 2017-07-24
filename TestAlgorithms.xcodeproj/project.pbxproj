@@ -14,6 +14,8 @@
 		7835F3C81F24D05F00A92593 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7835F3C71F24D05F00A92593 /* Assets.xcassets */; };
 		7835F3CB1F24D05F00A92593 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7835F3C91F24D05F00A92593 /* LaunchScreen.storyboard */; };
 		7835F3D61F24D05F00A92593 /* TestStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 7835F3D51F24D05F00A92593 /* TestStack.m */; };
+		78688F391F2633730014E5F2 /* OptimisedStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 78688F381F2633730014E5F2 /* OptimisedStack.m */; };
+		78688F3B1F26338C0014E5F2 /* TestOptimisedStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 78688F3A1F26338C0014E5F2 /* TestOptimisedStack.m */; };
 		78F44DCC1F26059A0045080F /* Stack.m in Sources */ = {isa = PBXBuildFile; fileRef = 78F44DCB1F26059A0045080F /* Stack.m */; };
 /* End PBXBuildFile section */
 
@@ -41,6 +43,9 @@
 		7835F3D11F24D05F00A92593 /* TestAlgorithmsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestAlgorithmsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7835F3D51F24D05F00A92593 /* TestStack.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestStack.m; sourceTree = "<group>"; };
 		7835F3D71F24D05F00A92593 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		78688F371F2633730014E5F2 /* OptimisedStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OptimisedStack.h; sourceTree = "<group>"; };
+		78688F381F2633730014E5F2 /* OptimisedStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OptimisedStack.m; sourceTree = "<group>"; };
+		78688F3A1F26338C0014E5F2 /* TestOptimisedStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestOptimisedStack.m; sourceTree = "<group>"; };
 		78F44DCA1F26059A0045080F /* Stack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Stack.h; sourceTree = "<group>"; };
 		78F44DCB1F26059A0045080F /* Stack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Stack.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -102,6 +107,7 @@
 		7835F3D41F24D05F00A92593 /* TestAlgorithmsTests */ = {
 			isa = PBXGroup;
 			children = (
+				78688F3A1F26338C0014E5F2 /* TestOptimisedStack.m */,
 				7835F3D51F24D05F00A92593 /* TestStack.m */,
 				7835F3D71F24D05F00A92593 /* Info.plist */,
 			);
@@ -126,6 +132,8 @@
 		78F44DC91F2605820045080F /* Stack */ = {
 			isa = PBXGroup;
 			children = (
+				78688F371F2633730014E5F2 /* OptimisedStack.h */,
+				78688F381F2633730014E5F2 /* OptimisedStack.m */,
 				78F44DCA1F26059A0045080F /* Stack.h */,
 				78F44DCB1F26059A0045080F /* Stack.m */,
 			);
@@ -235,6 +243,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				78F44DCC1F26059A0045080F /* Stack.m in Sources */,
+				78688F391F2633730014E5F2 /* OptimisedStack.m in Sources */,
 				7835F3C31F24D05F00A92593 /* ViewController.m in Sources */,
 				7835F3C01F24D05F00A92593 /* AppDelegate.m in Sources */,
 				7835F3BD1F24D05F00A92593 /* main.m in Sources */,
@@ -246,6 +255,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7835F3D61F24D05F00A92593 /* TestStack.m in Sources */,
+				78688F3B1F26338C0014E5F2 /* TestOptimisedStack.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,18 +1,18 @@
 //
-//  TestStack.m
-//  TestAlgorithmsTests
+//  TestOptimisedStack.m
+//  TestAlgorithms
 //
-//  Created by Dima Gubatenko on 23.07.17.
+//  Created by Dima Gubatenko on 24.07.17.
 //  Copyright © 2017 Dima Gubatenko. All rights reserved.
 //
 
 #import <XCTest/XCTest.h>
-#import "Stack.h"
+#import "OptimisedStack.h"
 
-@interface TestStack : XCTestCase
+@interface TestOptimisedStack : XCTestCase
 @end
 
-@implementation TestStack
+@implementation TestOptimisedStack
 
 - (void)testExample {
     // This is an example of a functional test case.
@@ -20,8 +20,8 @@
     XCTAssertTrue(true);
 }
 
-- (void)testStackPushPopPerfomance {
-    Stack<NSString *> *const stack = [[Stack alloc] init];
+- (void)testOptimisedStackPushPopPerfomance {
+    OptimisedStack<NSString *> *const stack = [[OptimisedStack alloc] init];
     [self measureBlock:^{
         for (int i = 0; i < 1000000; i++) {
             [stack pushValue:@"test string"];
@@ -40,8 +40,8 @@
     }];
 }
 
-- (void)testStackWithCapacityPushPopPerfomance {
-    Stack<NSString *> *const stack = [[Stack alloc] initWithCapacity:3];
+- (void)testOptimisedStackWithCapacityPushPopPerfomance {
+    OptimisedStack<NSString *> *const stack = [[OptimisedStack alloc] initWithCapacity:3];
     [self measureBlock:^{
         for (int i = 0; i < 1000000; i++) {
             [stack pushValue:@"test string"];
